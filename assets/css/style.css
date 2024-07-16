@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none !important;
+    text-decoration: none ;
     list-style-type: none;
     box-sizing: border-box;
 }
@@ -252,6 +252,44 @@ header {
 
 /*-----------------------ist section end------------------------ */
 /* ------------------------2nd section start---------------------- */
+.post1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 30px;
+    overflow:hidden;
+}
+.post2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.post3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.post4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.post{
+    transition: all .3ms linear;
+}
+.post:hover{
+    scale: 1.1;
+}
+.photo{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 15px;
+}
+
+
 .line-1 {
     width: 166px;
     background: #2C49FE;
@@ -457,12 +495,15 @@ header {
     margin-top: 47px;
 }
 
-.ml-96 {
-    margin-left: 96px;
+.ml-80 {
+    margin-left: 80px;
 }
 
 .mt-8 {
     margin-top: 8px;
+}
+.mt-30{
+    margin-top: 30px;
 }
 
 .Remove {
@@ -699,6 +740,7 @@ footer ul li:not(:first-child) a {
         padding-left: 12px;
         padding-right: 12px;
     }
+    
 
 }
 
@@ -707,4 +749,7 @@ footer ul li:not(:first-child) a {
         flex-direction: column;
 
     }
+        .heroimage {
+            width: 100%;
+        }
 }
